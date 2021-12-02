@@ -19,6 +19,7 @@ public class Dec2Hex {
     public static String d2h(int n) {
         String hexString = "";
         int i = 0;
+        System.out.println(i);
         while (n != 0) {
             int temp = 0;
             temp = n % 16;
