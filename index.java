@@ -25,6 +25,7 @@ public class index {
                         switch (round_hw) {
                             // home work 1
                             case 1:
+                                homework1(sc, args);
                                 break;
                             // home work 2
                             case 2:
@@ -36,6 +37,7 @@ public class index {
                                 break;
                             // home work 4
                             case 4:
+                                homework4(sc, args);
                                 break;
                             // home work 5
                             case 5:
@@ -507,7 +509,49 @@ public class index {
     }
 
     public static void homework4(Scanner sc, String[] args) {
-
+        int input;
+        do {
+            System.out.println("------------------------------------------");
+            System.out.println("1: ball_player ");
+            System.out.println("2: bouncingball ");
+            System.out.println("3: complex ");
+            System.out.println("4: date ");
+            System.out.println("5: polynomial ");
+            System.out.println("6: time ");
+            System.out.println("0: Back");
+            input = sc.nextInt();
+            switch (input) {
+                case 1:
+                    System.out.println("------------------------------------------");
+                    homework.homework4.ballplayer.TestMain.main(args);;
+                    break;
+                case 2:
+                    System.out.println("------------------------------------------");
+                    homework.homework4.bouncingballs.TestMain.main(args);
+                    break;
+                case 3:
+                    System.out.println("------------------------------------------");
+                    homework.homework4.mycomplex.TestMain.main(args);
+                    break;
+                case 4:
+                    System.out.println("------------------------------------------");
+                    homework.homework4.mydate.TestMain.main(args);
+                    break;
+                case 5:
+                    System.out.println("------------------------------------------");
+                    homework.homework4.polynomial.TestMain.main(args);
+                    break;
+                case 6:
+                    System.out.println("------------------------------------------");
+                    homework.homework4.mytime.TestMain.main(args);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Your choice is not correct ! Please try again");
+                    break;
+            }
+        } while (input != 0);
     }
 
     public static void homework5(Scanner sc, String[] args) {

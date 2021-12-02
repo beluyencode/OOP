@@ -38,18 +38,18 @@ public class MyDate {
         int soCen = 0;
         int dayOfWeek = 0;
         switch (sodu) {
-        case 0:
-            soCen = 6;
-            break;
-        case 1:
-            soCen = 4;
-            break;
-        case 2:
-            soCen = 2;
-            break;
-        case 3:
-            soCen = 0;
-            break;
+            case 0:
+                soCen = 6;
+                break;
+            case 1:
+                soCen = 4;
+                break;
+            case 2:
+                soCen = 2;
+                break;
+            case 3:
+                soCen = 0;
+                break;
         }
 
         int endYear = Integer.parseInt(stringYear.charAt(2) + "" + stringYear.charAt(3));
@@ -62,22 +62,30 @@ public class MyDate {
     }
 
     public MyDate(int year, int month, int day) {
-        if (isValidDate(year, month, day)) {
-            this.year = year;
-            this.month = month;
-            this.day = day;
-        } else {
-            throw new IllegalArgumentException("Invalid year, month, or day!");
+        try {
+            if (isValidDate(year, month, day)) {
+                this.year = year;
+                this.month = month;
+                this.day = day;
+            } else {
+                throw new IllegalArgumentException("Invalid year, month, or day!");
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
         }
     }
 
     public void setDate(int year, int month, int day) {
-        if (isValidDate(year, month, day)) {
-            this.year = year;
-            this.month = month;
-            this.day = day;
-        } else {
-            throw new IllegalArgumentException("Invalid year, month, or day!");
+        try {
+            if (isValidDate(year, month, day)) {
+                this.year = year;
+                this.month = month;
+                this.day = day;
+            } else {
+                throw new IllegalArgumentException("Invalid year, month, or day!");
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
         }
     }
 
@@ -86,10 +94,14 @@ public class MyDate {
     }
 
     public void setYear(int year) {
-        if (year >= 1 && year <= 9999) {
-            this.year = year;
-        } else {
-            throw new IllegalArgumentException("Invalid year!");
+        try {
+            if (year >= 1 && year <= 9999) {
+                this.year = year;
+            } else {
+                throw new IllegalArgumentException("Invalid year!");
+            }
+        } catch (IllegalArgumentException e) {
+           System.out.println(e);
         }
     }
 
@@ -98,10 +110,14 @@ public class MyDate {
     }
 
     public void setMonth(int month) {
-        if (month >= 1 && month <= 12) {
-            this.month = month;
-        } else {
-            throw new IllegalArgumentException("Invalid month!");
+        try {
+            if (month >= 1 && month <= 12) {
+                this.month = month;
+            } else {
+                throw new IllegalArgumentException("Invalid month!");
+            }
+        } catch (IllegalArgumentException e) {
+           System.out.println(e);
         }
     }
 
@@ -110,11 +126,15 @@ public class MyDate {
     }
 
     public void setDay(int day) {
-        if ((isLeapYear(year) && month == 2 && day >= 1 && day <= 29)
-                || (!isLeapYear(year) && day >= 1 && day <= DAYS_IN_MONTHS[month - 1])) {
-            this.day = day;
-        } else {
-            throw new IllegalArgumentException("Invalid day!");
+        try {
+            if ((isLeapYear(year) && month == 2 && day >= 1 && day <= 29)
+                    || (!isLeapYear(year) && day >= 1 && day <= DAYS_IN_MONTHS[month - 1])) {
+                this.day = day;
+            } else {
+                throw new IllegalArgumentException("Invalid day!");
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);;
         }
 
     }
