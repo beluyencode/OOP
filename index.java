@@ -88,7 +88,129 @@ public class index {
     }
 
     public static void homework1(Scanner sc, String[] args) {
-
+        int input;
+        do {
+            System.out.println("1: Bin2Dec");
+            System.out.println("2: BoxPattern");
+            System.out.println("3: CeasarCode");
+            System.out.println("4: CheckerPattern");
+            System.out.println("5: CheckHexStr");
+            System.out.println("6: CountVowelsDigits");
+            System.out.println("7: DecipherCeasarCode");
+            System.out.println("8: ExchangeCipher");
+            System.out.println("9: Factorial");
+            System.out.println("10: Hex2Dec");
+            System.out.println("11: HillPattern");
+            System.out.println("12: Oct2Dec");
+            System.out.println("13: PhoneKeyPadA");
+            System.out.println("14: PhoneKeyPadB");
+            System.out.println("15: RadixN2Dec");
+            System.out.println("16: RadixN2DecRewrite");
+            System.out.println("17: ReverseString");
+            System.out.println("18: SquarePattern");
+            System.out.println("19: SquarePattern1");
+            System.out.println("20: TestPalindromicPhrase");
+            System.out.println("21: TimeTable");
+            System.out.println("22: TriangularPattern");
+            System.out.println("0: Back");
+            System.out.print("your choice : ");
+            input = sc.nextInt();
+            switch (input) {
+                case 1:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.Bin2Dec.main(args);
+                    break;
+                case 2:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.BoxPattern.main(args);
+                    break;
+                case 3:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.CeasarCode.main(args);
+                    break;
+                case 4:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.CheckHexStr.main(args);
+                    break;
+                case 5:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.CheckerPattern.main(args);
+                    break;
+                case 6:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.CountVowelsDigits.main(args);
+                    break;
+                case 7:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.DecipherCeasarCode.main(args);
+                    break;
+                case 8:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.ExchangeCipher.main(args);
+                    break;
+                case 9:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.Factorial.main(args);
+                    break;
+                case 10:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.Hex2Dec.main(args);
+                    break;
+                case 11:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.HillPattern.main(args);
+                    break;
+                case 12:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.Oct2Dec.main(args);
+                    break;
+                case 13:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.PhoneKeyPadA.main(args);
+                    break;
+                case 14:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.PhoneKeyPadB.main(args);
+                    break;
+                case 15:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.RadixN2Dec.main(args);
+                    break;
+                case 16:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.RadixN2DecRewrite.main(args);
+                    break;
+                case 17:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.ReverseString.main(args);
+                    break;
+                case 18:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.SquarePattern.main(args);
+                    break;
+                case 19:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.SquarePattern1.main(args);
+                    break;
+                case 20:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.TestPalindromicPhrase.main(args);
+                    break;
+                case 21:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.TimeTable.main(args);
+                    break;
+                case 22:
+                    System.out.println("------------------------------------------");
+                    homework.homework1.TriangularPattern.main(args);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Your choice is not correct ! Please try again");
+                    break;
+            }
+        } while (input != 0);
     }
 
     public static void homework2(Scanner sc, String[] args) {
