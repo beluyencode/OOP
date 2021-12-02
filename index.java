@@ -41,6 +41,7 @@ public class index {
                                 break;
                             // home work 5
                             case 5:
+                                homework5(sc, args);
                                 break;
                             // home work 6
                             case 6:
@@ -555,7 +556,97 @@ public class index {
     }
 
     public static void homework5(Scanner sc, String[] args) {
-
+        int input;
+        do {
+            System.out.println("------------------------------------------");
+            System.out.println("homework 5 :");
+            System.out.println("1.Part 1");
+            System.out.println("2.Part 2");
+            System.out.println("0.back");
+            System.out.print("your choice : ");
+            input = sc.nextInt();
+            switch (input) {
+                // part 1
+                case 1:
+                    int input_part1;
+                    do {
+                        System.out.println("------------------------------------------");
+                        System.out.println("1.bai 1");
+                        System.out.println("2.bai 2");
+                        System.out.println("3.bai 3");
+                        System.out.println("4.bai 4");
+                        System.out.println("5.bai 5");
+                        System.out.println("0.back");
+                        System.out.print("your choice : ");
+                        input_part1 = sc.nextInt();
+                        switch (input_part1) {
+                            case 1:
+                                System.out.println("------------------------------------------");
+                                homework.homework5.part1.bai1.Test.main(args);
+                                break;
+                            case 2:
+                                System.out.println("------------------------------------------");
+                                homework.homework5.part1.bai2.Test.main(args);
+                                break;
+                            case 3:
+                                System.out.println("------------------------------------------");
+                                homework.homework5.part1.bai3.Test.main(args);
+                                break;
+                            case 4:
+                                System.out.println("------------------------------------------");
+                                homework.homework5.part1.bai4.CircleTest.main(args);
+                                homework.homework5.part1.bai4.RectangleTest.main(args);
+                                homework.homework5.part1.bai4.ShapeTest.main(args);
+                                homework.homework5.part1.bai4.SquareTest.main(args);
+                                break;
+                            case 5:
+                                System.out.println("------------------------------------------");
+                                homework.homework5.part1.bai5.Test.main(args);
+                                break;
+                            case 0:
+                                break;
+                            default:
+                                System.out.println("Your choice is not correct ! Please try again");
+                                break;
+                        }
+                    } while (input_part1 != 0);
+                    break;
+                // part 2
+                case 2:
+                    int input_part2;
+                    do {
+                        System.out.println("------------------------------------------");
+                        System.out.println("1.bai 1");
+                        System.out.println("2.bai 2");
+                        System.out.println("0.back");
+                        System.out.print("your choice : ");
+                        input_part2 = sc.nextInt();
+                        switch (input_part2) {
+                            case 1:
+                                System.out.println("------------------------------------------");
+                                homework.homework5.part2.bai1.Test.main(args);
+                                break;
+                            case 2:
+                                System.out.println("------------------------------------------");
+                                homework.homework5.part2.bai2.TestLine.main(args);
+                                homework.homework5.part2.bai2.TestLineSp.main(args);
+                                homework.homework5.part2.bai2.TestPoint.main(args);
+                                break;
+                            case 0:
+                                break;
+                            default:
+                                System.out.println("Your choice is not correct ! Please try again");
+                                break;
+                        }
+                    } while (input_part2 != 0);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Your choice is not correct ! Please try again");
+                    break;
+            }
+        } while (input != 0);
     }
 
     public static void homework6(Scanner sc, String[] args) {
