@@ -70,6 +70,7 @@ public class index {
                                 break;
                             // lab 2
                             case 2:
+                                lab2(sc, args);
                                 break;
                             case 0:
                                 break;
@@ -93,6 +94,8 @@ public class index {
     public static void homework1(Scanner sc, String[] args) {
         int input;
         do {
+            System.out.println("------------------------------------------");
+            System.out.println("homework 1 :");
             System.out.println("1: Bin2Dec");
             System.out.println("2: BoxPattern");
             System.out.println("3: CeasarCode");
@@ -513,6 +516,7 @@ public class index {
         int input;
         do {
             System.out.println("------------------------------------------");
+            System.out.println("homework 4 :");
             System.out.println("1: ball_player ");
             System.out.println("2: bouncingball ");
             System.out.println("3: complex ");
@@ -524,7 +528,8 @@ public class index {
             switch (input) {
                 case 1:
                     System.out.println("------------------------------------------");
-                    homework.homework4.ballplayer.TestMain.main(args);;
+                    homework.homework4.ballplayer.TestMain.main(args);
+                    ;
                     break;
                 case 2:
                     System.out.println("------------------------------------------");
@@ -806,8 +811,107 @@ public class index {
         } while (input != 0);
     }
 
-    public static void lab2(Scanner scanner, String[] args) {
-
+    public static void lab2(Scanner sc, String[] args) {
+        int input;
+        do {
+            System.out.println("------------------------------------------");
+            System.out.println("lab 2 :");
+            System.out.println("1: ArrayToString");
+            System.out.println("2: Contains");
+            System.out.println("3: CopyOf");
+            System.out.println("4: Dec2Hex");
+            System.out.println("5: Equals");
+            System.out.println("6: Exponent");
+            System.out.println("7: GradesHistogram");
+            System.out.println("8: GradesStatistics1_3");
+            System.out.println("9: GradesStatistics2_11");
+            System.out.println("10: Hex2Bin");
+            System.out.println("11: MagicSum");
+            System.out.println("12: Print");
+            System.out.println("13: PrintArray");
+            System.out.println("14: PrintArrayInStars");
+            System.out.println("15: Reverse");
+            System.out.println("16: Search");
+            System.out.println("17: Swap");
+            System.out.println("0.back");
+            System.out.print("your choice : ");
+            input = sc.nextInt();
+            switch (input) {
+                case 1:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.ArrayToString.main(args);
+                    break;
+                case 2:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Contains.main(args);
+                    break;
+                case 3:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.CopyOf.main(args);
+                    break;
+                case 4:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Dec2Hex.main(args);
+                    break;
+                case 5:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Equals.main(args);
+                    break;
+                case 6:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Exponent.main(args);
+                    break;
+                case 7:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.GradesHistogram.main(args);
+                    break;
+                case 8:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.GradesStatistics1_3.main(args);
+                    break;
+                case 9:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.GradesStatistics2_11.main(args);
+                    break;
+                case 10:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Hex2Bin.main(args);
+                    break;
+                case 11:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.MagicSum.main(args);
+                    break;
+                case 12:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Print.main(args);
+                    break;
+                case 13:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.PrintArray.main(args);
+                    break;
+                case 14:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.PrintArrayInStars.main(args);
+                    break;
+                case 15:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Reverse.main(args);
+                    break;
+                case 16:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Search.main(args);
+                    break;
+                case 17:
+                    System.out.println("------------------------------------------");
+                    lab.lab2.Swap.main(args);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Your choice is not correct ! Please try again");
+                    break;
+            }
+        } while (input != 0);
     }
 
 }
