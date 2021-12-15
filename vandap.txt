@@ -1,0 +1,338 @@
+1.1 What is package?
+Biểu diễn sự nhóm hợp lý của các kiểu tương tự vào không gian 
+tên. Nó cũng ngăn chặn xung đột đặt tên và cung cấp bảo vệ truy cập.
+
+1.2 Why do you need to import packages?
+Để có thể sử dụng các package hoặc class ở trong code
+
+1.3 What is the difference between argument and parameter?
+-Parameter: chỉ định biến đc khai báo trong định nghĩa của method
+-Argument : chỉ định dữ liệu đc truyền vào cho các tham số của method
+
+2.1 Explain the process of Java code compilation and execution?
+Trình biên dịch Java biên dịch mã nguồn Java (tệp .java) thành định dạng nhị phân
+được biết như bytecode (tệp .class). Java bytecode là tập lệnh độc lập với 
+nền tảng, chứa các hướng dẫn (opcode) và thông tin tham số.
+
+2.2 What is the difference between bytecode and source code?
+-Bytecode : được dịch bởi Hệ điều hành riêng biệt Máy ảo Java (JVM) 
+vào mã máy cụ thể của nền tảng
+-source code: hay mã nguồn, là thành phần cơ bản của một chương trình máy tính 
+chứa các mã lệnh thực thi và được tạo ra bởi các lập trình viên
+
+2.3. What is JVM? Is it same or different for different Operating Systems?
+-JVM :  là 1 máy ảo java – nó được dùng để thực thi các chương trình Java hay hiểu nôm na 
+là trình thông dịch của Java
+-Operating System - OS : là phần mềm hệ thống quản lý phần cứng máy tính, 
+phần mềm và cung cấp các dịch vụ chung cho các chương trình máy tính
+
+2.4 What is the role of class loader in JVM?
+tải biểu diễn nhị phân của các lớp vào bộ nhớ
+
+3.1 What are primitive data types?
+Các kiểu nguyên thủy là byte, boolean, char, short, int, float, long và double. 
+
+3.2. If a variable of primitive data type is not assigned, what does it contain?
+Các kiểu nguyên thủy luôn có một giá trị; nếu không được chỉ định, sẽ có giá trị mặc định
+
+3.3. What happens when you assign a variable of primitive data type to another variable of same
+type?
+Khi một kiểu nguyên thủy được gán cho một biến khác, một bản sao sẽ được tạo
+
+3.4. What are reference data types?
+Tất cả các kiểu không nguyên thủy là kiểu tham chiếu.
+Các loại tham chiếu cũng thường được gọi là các đối tượng
+(Các kiểu tham chiếu, là các đối tượng được tạo ra bởi Constructor của các lớp.)
+
+3.5. What happens when you assign a variable of reference data type to another variable of same
+reference type?
+Khi một tham chiếu được gán cho một tham chiếu khác, cả hai đều trỏ đến cùng một đối tượng.
+
+3.7. If a variable of reference data type is not assigned, what does it contain?
+Đối tượng của kiểu tham chiếu sẽ có null làm giá trị mặc định, khi nó chưa 
+được gán
+
+4.1. What is the purpose of access modifier?
+Access modifiers : xác định các quy tắc hiển thị liệu các lớp khác có thể truy cập một biến 
+hoặc gọi một phương thức hay không
+
+4.2. What is the scope of private, protected and pubic access modifiers?
+private : Các lớp bên ngoài không thể truy cập thành viên
+protected :  Chỉ các lớp con mới có thể truy cập thành viên
+pubic : Tất cả các lớp trong ứng dụng đều có thể truy cập thành viên.
+
+4.3. What happens when no access modifier is specified with the class?
+Tất cả các lớp trong gói có thể truy cập thành viên này
+
+5.1. What are static variables?
+nó biểu thị rằng những thành viên này thuộc về 
+lớp và các thành viên này được chia sẻ bởi tất cả các đối 
+tượng của lớp
+(sẽ được tạo ra duy nhất một lần khi gọi hàm lần đầu tiên và 
+nó sẽ không bị xóa đi để tạo lại khi gọi lại hàm ấy)
+
+5.2. What are static methods?
+(Phương thức static có thể truy cập biến static và có thể thay đổi giá trị của nó.)
+
+5.3. Does static method has access to an instance member? Why?
+Phương thức static không có quyền truy cập vào các phương thức hoặc thuộc tính của cá 
+thể, bởi vì các thành viên tĩnh thuộc về lớp chứ không phải các thể hiện của lớp.
+
+6.1. Explain final class? What are the benefits of declaring a class final?
+final class :  không thể kế thừa lớp
+-điều này làm cho lớp an toàn và hiệu quả.
+
+6.2. Explain final method? What are the benefits of declaring a method final?
+không thể ghi đè phương thức, điều này ngăn chặn mọi khả năng 
+đưa bất kỳ hành vi không mong muốn nào vào lớp
+
+6.3. Explain final variable? What are the benefits of declaring a variable final?
+ không thể thay đổi giá trị của biến final (nó sẽ là hằng số), nhưng nội dung của đối tượng có thể 
+thay đổi, mà biến final đang tham chiếu, có thể được thay đổi
+
+6.4. When you declare a variable final, can you change the content of the object it’s referencing?
+có
+
+6.5. When you declare a variable final, can you change it to reference another object?
+không vì biến final không thể thay đổi tham chiếu 
+
+7.1. What is the difference between pass by value and pass by reference?
+-pass by value : khi truyền 1 đối tượng vào phương thức 
+thì cái đc chiều là bản sao chứ không phải bản thân đối tượng 
+nên khi say ra thay đổi trong phương thức thì đối tượng bên ngoài sẽ không bị ảnh hưởng
+-pass by reference : tham chiếu đúng đối tượng đó vào phương thức thay vi bản sao
+
+7.2. How are the reference type arguments passed in Java; by reference or by value?
+chịu
+
+7.3. If a copy of reference is passed by value, how can the method get access to the object that the
+reference is pointing to?
+chịu
+
+7.4. If a copy of reference is passed by value, can you change the value of reference?
+chịu
+
+8.1. What is naming convention?
+là một tập hợp các quy tắc chi phối việc đặt tên cho các mã định danh 
+đại diện cho  interface, class, method, variables
+
+8.2. Why do you need naming convention?
+sẽ giúp cải thiện khả năng đọc code , giúp xem xét và hiểu tổng thể về code
+
+8.3. What is the difference between Camel Case and Lower Camel Case?
+-Camel Case : 
+	+Upper Camel Case : giống Pascal Case
+	+Lower Camel Case : kí tự đầu chữ đầu tiên viết thương còn 
+			    các kí tự đầu của các chữ sao viết hoa 
+			    (ví dụ : borderLength)
+-Pascal Case : kí tự đài tiên của các chữ phải viết hoa 
+(ví dụ : BorderLength)
+
+8.4. What is the difference between Upper Camel Case and Lower Camel Case?
+là 8.3 phần Camel Case.
+
+8.5. Explain naming convention for interface, class, method, variable, constant, enum and
+acronyms?
+-Interface:Tên phải là một tính từ nếu nó xác định hành vi, nếu không là danh từ
+	   (sử dụng Pascal Case)
+-class:Tên phải là một danh từ, vì một lớp đại diện cho một số đối tượng trong thế giới thực
+       (sử dụng Pascal Case)
+-Method:sử dụng Lower Camel Case
+-variable:sử dụng Lower Camel Case
+-constant:Tên phải là tất cả các chữ cái viết hoa. Các từ ghép phải được phân tách bằng dấu gạch dưới.
+-enum:Tên phải là tất cả các chữ cái viết hoa.
+-Acronyms:từ đàu tiên của các từ viết tắt sẽ đc viết hoa còn lại viết thường 
+	  (ví dụ : public void parseXml(){})
+
+9.1. What is Polymorphism?
+Tính đa hình là khả năng của một cá thể lớp có các dạng khác nhau dựa trên thể hiện mà nó hoạt động.
+
+9.2. What are different ways to achieve polymorphism?
++đạt dc bằng cách triển khai subclass
++đạt dc bằng cách triển khaiinterface
+
+9.3. How is inheritance useful to achieve polymorphism?
+giúp thiết lập triển khai 1 sô tính năng nhất định và chia sẻ  1 số  chức năng  thông qua inheritance (kế thừa)
+
+9.4. What are the benefits of polymorphism?
+đa hình cho phép lựa chọn việc triển khai lớp thích hợp nhất. Không chỉ trong code 
+, nó còn mở đường để có một triển khai thay thế cho testing.
+
+10.1. What is Subtype Polymorphism?
+định nghĩa tham số của một hàm hỗ trợ bất kỳ đối số nào của một kiểu hoặc kiểu con của nó.
+
+11.1. What is method overriding?
+định nghĩa lại phương thức của lớp cơ sở để hoạt động theo một cách 
+khác với cách triển khai của nó 
+
+11.2. What is dynamic polymorphism?
+là đa hình tồn tại trong thời gian chạy
+là nơi quyết định chọn phương thức thực thi, được đặt trong thời gian chạy. 
+Phương pháp Overriding có thể là một ví dụ về điều này.
+(google nhưng không hiểu lắm )
+
+11.3. Why can’t you override static methods defined in super class or interface?
+vì Phương thức ghi đè không thể némđã kiểm tra ngoại lệ (exception) nếu định nghĩa của nó trong lớp cơ sở không, 
+mặc dù phương thức ghi đè vẫn có thể ném ngoại lệ (exception) không được kiểm tra.
+
+11.4. Can you override a final method defined in super class?
+không thể ghi đè final method trong super class
+
+12.1. Explain method overloading?
+ xác định nhiều phương thức có cùng tên, nhưng có các tham số khác nhau.
+
+12.2. What is static polymorphism?
+là tính đa hình được trưng bày tại thời điểm biên dịch
+trong khi code , quyết định được thực hiện để gọi một 
+triển khai cụ thể.
+(google nhưng không hiểu lắm )
+
+12.3. What is the difference between static and dynamic polymorphism?
+chịu
+
+12.4. Can you override a method such that all the parameters are same with the difference only in
+the return type?
+có
+
+12.5. What are the benefits of method overloading?
+làm tăng tính sử dụng cho các phương thức bên trong một lớp
+
+12.6. What is the difference between overriding and overloading?
+-overriding :có tham số giống nhau,Ghi đè phương thức xảy ra trong 2 class có quan hệ kế thừa.
+-overloading : Nạp chồng phương thức thì tham số phải khác nhau,Nạp chồng được thực hiện bên trong một class.
+
+13.1. What is abstraction?
+là tất cả về việc ẩn thông tin chi tiết về dữ liệu, cách trình bày và triển khai bên trong của nó.
+
+13.2. How abstraction is different from encapsulation?
+-abstraction : cũng được sử dụng để ẩn một thứ gì đó, nhưng ở mức độ cao hơn (class , interface). 
+	       Khách hàng sử dụng một lớp abstract  (hoặc interface) không quan tâm đến nó là gì,
+       	       họ chỉ cần biết nó có thể làm gì
+		
+
+-encapsulation : gói ẩn các biến hoặc một số triển khai có thể được thay đổi thường
+		xuyên trong một lớp để ngăn người ngoài truy cập trực tiếp.
+		Họ phải truy cập nó thông qua phương thức getter và setter.
+
+13.3. What are the benefits of abstraction?
+giúp làm cho phần mềm có thể bảo trì, an toàn và cung cấp khả năng thay đổi 
+việc triển khai mà không phá vỡ bất kỳ ứng dụng khách nào.
+
+14.1. Explain inheritance?
+ là một khái niệm thiết kế hướng đối tượng đề cập đến việc sử dụng lại một định 
+nghĩa lớp hiện có (super class ) và xác định các danh mục đặc biệt hơn của lớp 
+(sub class ) bằng cách kế thừa lớp đó
+
+14.2. What is the purpose of inheritance?
+là để sử dụng lại các mã 
+
+14.3. What should be the criteria to decide inheritance relation between two classes?
+class con phải có các tính chất gần tương đồng với class cha 
+
+14.4. How inheritance plays an important role in polymorphism?
+thiết lập mối quan hệ giữa 2 class....
+
+14.5. Can you inherit final class?
+hong
+
+14.6. What happens if you don’t use super keyword to call an overridden member?
+chắc là sẽ hong sử dụng dc thuộc tính của lớp cha
+
+15.1. Explain composition?
+là một khái niệm thiết kế hướng đối tượng có liên quan chặt chẽ đến kế thừa , vì nó 
+cũng giải quyết việc sử dụng lại các lớp; nhưng nó tập trung vào việc thiết lập CÓ-MỘT mối 
+quan hệ giữa các lớp. Vì vậy, không giống như kế thừa , liên quan đến việc mở rộng các tính 
+năng của một lớp, composition sử dụng lại một lớp bằng cách soạn nó. Thành phần đạt được bằng 
+cách lưu trữ tham chiếu của một lớp khác như một thành viên.
+
+15.2. What is the difference between inheritance and composition?
+inheritance : kế thừa lại tinh chất của lớp cha
+composition : là dùng class B để trở thành thuộc tính của class A
+
+15.3. What should be the criteria to decide composition relation between two classes?
+????????
+
+15.4. Explain few problems with inheritance that can be avoided by using composition?
+ví dụ : class person và class job 1 người thì thường có công việc nhưng kể person 
+kể thừa job hay job kế thừa person thì rất khó để kế thừa nên tao sẽ sửa dụng composition
+để cho job thành 1 thuộc tính của class person (hong chắc lém đâu nhé)
+
+15.5. When would you prefer composition over inheritance and vice versa?
+câu hỏi: khi nào bạn thích composition hơn inheritance  và ngược lại ??????????????????
+
+16. Tính bất biến của chuỗi? 
+
+16.1. Tai sao các đối tượng chuỗi được gọi là bất biến? 
+- Do chúng không thể bị thay đổi
+
+16.2. đối tượng chuỗi được tạo như thể nào trong bộ nhớ? 
+- String str = new String("java"). 
+Sử dụng new(). được tạo trong heap 
+
+16.3. Uu điểm và nhược điểm của Tinh bất biển của chuỗi là gi? 
+- Ưu : 
++Không cần đồng bộ hóa giữa các obj String = an toân trong việc chia sẻ obj String giữa các thread.
++String Pool chứa các String literal. khi String literal bị lặp, các reference se cùng chỉ tới 1 literal,
+thay vì tạo mới. 
++ Do String  là immutable, chúng được  bảo vệ khỏi việc bị thay đổi giá trị trong lúc được thực thi
++ Hash-code cua obj String không đổi = cache được hash-code và không phải tính lại mỗi lần cần tới. 
+-Nhược: 
++ Class String không thể bị extend = không thêm được chức năng. 
++ Nhiều String literal = quá tải nơi chưa  rác. 
+
+17. String Literal vs Object 
+
+17.1. String String được tạo trong ", vào vùng nhớ đặc biệt String pool. 
+
+17.2. Khác biệt giữa  String Literal và String Object? 
+String Literal 
+- String str = "java". 
+- String dược tạo trong "", vào vùng nhớ đặc biệt: String pool. 
+String Object 
+- String str = new String ("java"). 
+-Sử dụng new(), dược tạo trong heap. 
+
+17.3 Làm thể nào để lưu trữ  String Literals ? 
+- Trong vùng String pool. 
+
+18. String Interning 
+
+18.1. What is String interning? 
+- Chỉ chứa 1 bản copy sho mỗi giá trị String immutable riêng biệt. 
+
+18.2. How can you intern a String Object?
+gọi method intern() trên String obj
+
+18.3. Điều gì sẽ xảy ra khi bạn lưu trữ một String literal mới đã có trong nhóm chuỗi( string pool)?
+ -Chỉ đến literal đang có. 
+
+18.4. Han chế của việc tạo số lượng lớn các chuỗi ký là j?
+-Rò ri bộ nhớ + Vấn để về thực thị. - 
+
+19. String Pool Memory Management
+
+19.1  Explain String Pool Memory Management (Quân ly bộ nhớ nhóm chuồi? 
+Nếu đã có một String literal trong String Pool, trinh biên dịch sẽ tham chiếu cái tham chiếu theo 
+chuỗi kí tự tới chuỗi ký tự thể đang có ,thay vi tạo literal mới
+
+19.2. Lưu trữ  String Literals nbư thế gáo? - Trong vùng nhớ quản lý bởi compiler-String pool,
+
+19.3. Lưu trữ String Objects nhur thể nào? - Trong heap. 
+
+20. StringBuilder vs StringBuffer? 
+
+20.1: Giong và khac nhau giữa StringBuffer vi StringBuilder? 
+giống nhau : 
++Mutable, tứe lă giả trị String có thể thay đổi. 
++Chứa trong heap.
++ Có một số method giống nhau 	
+
+-String Buffer 
+Method của StringBuffer dược đồng hà hỏa Thực thi của StringBuilder tot hơn do khöng (=> thread safe).
+
+-StringBuilder 
+Method của StringBuffer dược đồng hà hỏa Thực thi của StringBuilder tot hơn do khöng (=> thread safe).
+ StringBuilder thi không. có đồng bộ hỏa 
+
+20.2. Khi nào cản StringBuffer hơn StringBuilder? 
+- Khi cầu chia sẽ  String obj giữa có  thread
